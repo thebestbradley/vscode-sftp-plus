@@ -111,7 +111,7 @@ We welcome contributions from the community! Please read our [contribution guide
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix.
 3. Make your changes and ensure that the code passes all tests.
-4. Submit a pull request to the `develop` branch with a clear description of your changes.
+4. Submit a pull request to the `master` branch with a clear description of your changes.
 
 For more details on how to contribute, check out our [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki).
 
