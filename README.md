@@ -25,7 +25,7 @@ Welcome to the SFTP+ Sync repository! This is a fork of the actively maintained 
 
 ## Introduction
 
-SFTP+ Sync is an extension for Visual Studio Code that allows you to upload and download files from your remote servers. This fork aims to provide additional functionality and improvements over the original extension.
+SFTP+ Sync is an extension for Visual Studio Code that allows you to upload and download files from your remote servers. This fork aims to provide additional functionality and improvements over the original extension. [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki).
 
 ## Current Features
 
@@ -42,7 +42,7 @@ SFTP+ Sync is an extension for Visual Studio Code that allows you to upload and 
 - **Customizable Upload/Download Rules**: Define specific rules for file transfer operations.
 - **Performance Improvements**: Faster and more efficient file transfers.
 - **Bug Fixes**: Addressed issues from the original repository and added stability enhancements.
-- 
+  
 ### Added Features
 - **Enhanced Proxy Options**: Improved Proxy Support for SOCKS5 and HTTP.
 - **UI Enhancements**: Settings GUI and more. 
@@ -63,10 +63,10 @@ For a complete list of features and detailed documentation, please visit our [wi
 5. Locate the downloaded VSIX file and select it.
 6. Reload Visual Studio Code.
 
+For more detailed installation instructions and troubleshooting, please refer to our [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki).
+
 ### Method 2 (VS Code Extension Marketplace Installation)
 We will add this extension to the VS Code Marketplace in the near future once we have a stable and feature-rich extension to do so.
-
-For more detailed installation instructions and troubleshooting, please refer to our [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki).
 
 For more detailed installation instructions and troubleshooting, please refer to our [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki).
 
@@ -79,8 +79,7 @@ If the latest files are already on a remote server, you can start with an empty 
 3. A basic configuration file will appear named `sftp.json` under the `.vscode` directory, open and edit the configuration parameters with your remote server information.
 
 For instance:
-
-\`\`\`json
+```json
 {
     "name": "Profile Name",
     "host": "name_of_remote_host",
@@ -92,9 +91,9 @@ For instance:
     "password": "password",
     "uploadOnSave": false
 }
-\`\`\`
-
-The password parameter in `sftp.json` is optional, if left out you will be prompted for a password on sync. Note: backslashes and other special characters must be escaped with a backslash.
+```
+The password parameter in `sftp.json` is optional, if left out you will be prompted for a password on sync.
+_Note：_ backslashes and other special characters must be escaped with a backslash.
 
 4. Save and close the `sftp.json` file.
 5. `Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on Mac open command palette.
