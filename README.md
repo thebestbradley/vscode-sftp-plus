@@ -13,6 +13,7 @@ New maintained and updated version by [@thebestbradley](https://github.com/thebe
 Welcome to the SFTP+ Sync repository! This is a fork of the actively maintained [SFTP extension](https://github.com/Natizyskunk/vscode-sftp) by [@Natizyskunk](https://github.com/Natizyskunk) and [@satiromarra](https://github.com/satiromarra). Our goal is to enhance and add new features while maintaining compatibility with the original project. We will push our improvements back to the original repo when they are ready and beneficial to the broader community. [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki)
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
@@ -42,10 +43,11 @@ SFTP+ Sync is an extension for Visual Studio Code that allows you to upload and 
 - **Customizable Upload/Download Rules**: Define specific rules for file transfer operations.
 - **Performance Improvements**: Faster and more efficient file transfers.
 - **Bug Fixes**: Addressed issues from the original repository and added stability enhancements.
-  
+
 ### Added Features
+
 - **Enhanced Proxy Options**: Improved Proxy Support for SOCKS5 and HTTP.
-- **UI Enhancements**: Settings GUI and more. 
+- **UI Enhancements**: Settings GUI and more.
 - **Enhanced File Sync**: Improved file synchronization capabilities with conflict resolution.
 - **Customizable Upload/Download Rules**: Define specific rules for file transfer operations.
 - **Performance Improvements**: Faster and more efficient file transfers.
@@ -56,6 +58,7 @@ For a complete list of features and detailed documentation, please visit our [wi
 ## Extension Installation
 
 ### Method 1 (Manual Installation)
+
 1. Download the latest VSIX file from the [Releases](https://github.com/thebestbradley/vscode-sftp-plus/releases) page.
 2. Open Visual Studio Code.
 3. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
@@ -66,6 +69,7 @@ For a complete list of features and detailed documentation, please visit our [wi
 For more detailed installation instructions and troubleshooting, please refer to our [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki).
 
 ### Method 2 (VS Code Extension Marketplace Installation)
+
 We will add this extension to the VS Code Marketplace in the near future once we have a stable and feature-rich extension to do so.
 
 For more detailed installation instructions and troubleshooting, please refer to our [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki).
@@ -79,19 +83,21 @@ If the latest files are already on a remote server, you can start with an empty 
 3. A basic configuration file will appear named `sftp.json` under the `.vscode` directory, open and edit the configuration parameters with your remote server information.
 
 For instance:
+
 ```json
 {
-    "name": "Profile Name",
-    "host": "name_of_remote_host",
-    "protocol": "ftp",
-    "port": 21,
-    "secure": true,
-    "username": "username",
-    "remotePath": "/public_html/project", // <--- This is the path which will be downloaded if you "Download Project"
-    "password": "password",
-    "uploadOnSave": false
+  "name": "Profile Name",
+  "host": "name_of_remote_host",
+  "protocol": "ftp",
+  "port": 21,
+  "secure": true,
+  "username": "username",
+  "remotePath": "/public_html/project", // <--- This is the path which will be downloaded if you "Download Project"
+  "password": "password",
+  "uploadOnSave": false
 }
 ```
+
 The password parameter in `sftp.json` is optional, if left out you will be prompted for a password on sync.
 _Note：_ backslashes and other special characters must be escaped with a backslash.
 
@@ -118,6 +124,20 @@ For more details on how to contribute, check out our [wiki](https://github.com/t
 ## Roadmap
 
 Coming soon! We are actively planning new features and improvements. Stay tuned for updates.
+
+Proxy support is currently in progress and in testing on branch bradley.
+
+Once testing is complete - To Do:
+
+Update the documentation in README.md and docs/sftp_configuration.md to include information about the new proxy support features.
+
+Add new test cases in the tests directory to cover the proxy functionality for SFTP connections.
+
+Update the CHANGELOG.md file to reflect the addition of proxy support in the upcoming release.
+
+Implement any necessary UI changes in the extension to allow users to input proxy settings through the VS Code interface.
+
+Conduct thorough testing of the new proxy functionality across different scenarios and connection types.
 
 For a detailed roadmap and progress updates, please visit our [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki).
 
