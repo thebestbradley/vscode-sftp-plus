@@ -1,4 +1,4 @@
-# sftp+ sync extension for VS Code
+# sftp+ sync Extension for VS Code
 
 New maintained and updated version by [@thebestbradley](https://github.com/thebestbradley/) and [@zekeduncan](https://github.com/zekeduncan)<br>
 (Forked from the no longer maintained [Natizyskunk SFTP plugin](https://github.com/Natizyskunk/vscode-sftp.git))
