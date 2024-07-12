@@ -10,7 +10,7 @@ New maintained and updated version by [@thebestbradley](https://github.com/thebe
 
 # SFTP+ Sync
 
-Welcome to the SFTP+ Sync repository! This is a fork of the actively maintained [SFTP extension](https://github.com/Natizyskunk/vscode-sftp) by [@Natizyskunk](https://github.com/Natizyskunk) and [@satiromarra](https://github.com/satiromarra). Our goal is to enhance and add new features while maintaining compatibility with the original project. We will push our improvements back to the original repo when they are ready and beneficial to the broader community.
+Welcome to the SFTP+ Sync repository! This is a fork of the actively maintained [SFTP extension](https://github.com/Natizyskunk/vscode-sftp) by [@Natizyskunk](https://github.com/Natizyskunk) and [@satiromarra](https://github.com/satiromarra). Our goal is to enhance and add new features while maintaining compatibility with the original project. We will push our improvements back to the original repo when they are ready and beneficial to the broader community. [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -25,7 +25,7 @@ Welcome to the SFTP+ Sync repository! This is a fork of the actively maintained 
 
 ## Introduction
 
-SFTP+ Sync is an extension for Visual Studio Code that allows you to upload and download files from your remote servers. This fork aims to provide additional functionality and improvements over the original extension. [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki).
+SFTP+ Sync is an extension for Visual Studio Code that allows you to upload and download files from your remote servers. This fork aims to provide additional functionality and improvements over the original extension. [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki)
 
 ## Current Features
 
