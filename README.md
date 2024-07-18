@@ -10,7 +10,7 @@ New maintained and updated version by [@thebestbradley](https://github.com/thebe
 
 # SFTP+ Sync
 
-Welcome to the SFTP+ Sync repository! This is a fork of the actively maintained [SFTP extension](https://github.com/Natizyskunk/vscode-sftp) by [@Natizyskunk](https://github.com/Natizyskunk) and [@satiromarra](https://github.com/satiromarra). Our goal is to enhance and add new features while maintaining compatibility with the original project. We will push our improvements back to the original repo when they are ready and beneficial to the broader community. [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki)
+Welcome to the SFTP+ Sync repository! This is a fork of the actively maintained [SFTP extension](https://github.com/Natizyskunk/vscode-sftp) by [@Natizyskunk](https://github.com/Natizyskunk) and [@satiromarra](https://github.com/satiromarra). Our goal is to enhance and add new features, while maintaining compatibility with the original project. This will give access to our added features to the end users independently and quicker. We will push our improvements back to the original repo when they are ready and beneficial to the broader community. [wiki](https://github.com/thebestbradley/vscode-sftp-plus/wiki)
 
 ## Table of Contents
 - [Introduction](#introduction)
