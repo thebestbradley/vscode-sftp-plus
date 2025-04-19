@@ -1,35 +1,74 @@
-# SFTP configuration
+## SFTP configuration
 
-## agent
+### agent
 
-_string_: Path to ssh-agent's UNXI socket for ssh-agent-based user authentication.
-Windows users must set to 'pageant' for authenticating with Pagenat or (actual) path to a Cygwin "UNIX socket".
-Id get more stability because some client/server have some sort of configured/hard coded limit.
+Path to ssh-agent's UNIX socket for ssh-agent-based user authentication. <br>
+Windows users must set to 'pageant' for authenticating with Pagenat or (actual) path to a Cygwin "UNIX socket". <br>
+It'd get more stability because some client/server have some sort of configured/hard coded limit.
 
-## privateKeyPath
+| Key | Value |
+| --- | --- |
+| *agent* | *string* |
 
-_string_: Absolute path to user's private key.
+```json
+{
+  "agent": "/_subfolder_/agent"
+}
+```
 
-## passphrase
+### privateKeyPath
 
-_mixed_: For an encrypted private key, this is the passphrase string used to decrypt it.
-Set to true for enabling passphrase dialog. This will prevent from using cleartext passphrase in this config.
+Absolute path to user private key.
 
-## interactiveAuth
+| Key | Value |
+| --- | --- |
+| *privateKeyPath* | *string* |
 
-_boolean_|_string[]_: Enable keyboard interaction authentication mechanism. Set to true to enable `verifyCode` dialog.
+```json
+{
+  "privateKeyPath": "/.ssh/key.pem"
+}
+```
+
+### passphrase
+
+For an encrypted private key, this is the passphrase string used to decrypt it. <br>
+Set to 'true' for enable passphrase dialog. This will prevent from using cleartext passphrase in this config.
+
+| Key | Value |
+| --- | --- |
+| *passphrase* | *mixed* |
+
+```json
+{
+  "passphrase": true
+}
+```
+
+### interactiveAuth
+
+Enable keyboard interaction authentication mechanism. Set to 'true' to enable `verifyCode` dialog. <br>
 For example using Google Authentication (multi-factor). Or pass array of predefined phrases to automatically enter them without user prompting.
 
-Note: _Requires the server to have keyboard-interactive authentication enabled._
+| 💡 Note |
+| :--- |
+| *Requires the server to have keyboard-interactive authentication enabled.* | 
 
-**default**: false
+| Key | Value | Default |
+| --- | --- | --- |
+| *interactiveAuth* | *boolean*\|*string[]* | 'false' |
 
-## algorithms
+```json
+{
+  "interactiveAuth": true
+}
+```
+
+### algorithms
 
 Explicit overrides for the default transport layer algorithms used for the connection.
 
-**default**:
-
+**Default**:
 ```json
 {
   "algorithms": {
@@ -41,15 +80,15 @@ Explicit overrides for the default transport layer algorithms used for the conne
     ],
     "cipher": [
       "aes128-gcm",
-      "aes128-gcm@openssh.com",
-      "aes256-gcm",
-      "aes256-gcm@openssh.com",
-      "aes128-cbc",
-      "aes192-cbc",
-      "aes256-cbc",
-      "aes128-ctr",
-      "aes192-ctr",
-      "aes256-ctr"
+		"aes128-gcm@openssh.com",
+		"aes256-gcm",
+		"aes256-gcm@openssh.com",
+		"aes128-cbc",
+		"aes192-cbc",
+		"aes256-cbc",
+		"aes128-ctr",
+		"aes192-ctr",
+		"aes256-ctr"
     ],
     "serverHostKey": [
       "ssh-rsa",
@@ -61,25 +100,83 @@ Explicit overrides for the default transport layer algorithms used for the conne
       "rsa-sha2-512",
       "rsa-sha2-256"
     ],
-    "hmac": ["hmac-sha2-256", "hmac-sha2-512"]
-  }
+    "hmac": [
+      "hmac-sha2-256",
+      "hmac-sha2-512"
+    ]
+  },
 }
 ```
 
-## sshConfigPath
+### sshConfigPath
 
 Absolute path to your SSH configuration file.
 
-**default**: `~/.ssh/config`
+| Key | Value | Default |
+| --- | --- | --- |
+| *sshConfigPath* | *string* | `~/.ssh/config` |
 
-## sshCustomParams
+```json
+{
+  "sshConfigPath": "~/.ssh/config"
+}
+```
+
+### sshCustomParams
 
 Extra parameters appended to the SSH command used by "Open SSH in Terminal".
 
-## Proxy Configuration
+| Key | Value |
+| --- | --- |
+| *sshCustomParams* | *string* |
 
-- proxyHost: Proxy server hostname
-- proxyPort: Proxy server port
-- proxyType: 'http' or 'socks5'
-- proxyUsername: Username for proxy authentication (optional)
-- proxyPassword: Password for proxy authentication (optional)
+```json
+{
+  "sshCustomParams": "-g"
+}
+```
+
+### Proxy Configuration (optional)
+
+Enable proxy.
+
+#### proxyHost
+
+Proxy server hostname.
+
+| Key | Value |
+| --- | --- |
+| *proxyHost* | *string* |
+
+#### proxyPort
+
+Proxy server port
+
+| Key | Value |
+| --- | --- |
+| *proxyPort* | *string* |
+
+#### proxyType
+
+'http' or 'socks5'
+
+| Key | Value |
+| --- | --- |
+| *proxyType* | *string* |
+
+#### proxyUsername
+
+Username for proxy authentication (optional)
+
+| Key | Value |
+| --- | --- |
+| *proxyUsername* | *string* |
+
+#### proxyPassword
+
+Password for proxy authentication (optional)
+
+| Key | Value |
+| --- | --- |
+| *proxyPassword* | *string* |
+
